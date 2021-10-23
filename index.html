@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Žilinka Skóre</title>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Maroš Žilinka a jeho skóre. Šťastné číslo generálneho prokurátora je 363.">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+		<style>
+			html,
+			body {
+				height: 100%;
+			}
+			body {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				font-family: "Righteous", cursive;
+				background-color: black;
+				color: white;
+			}
+			a {
+				text-decoration: none;
+			}
+			header > h1 {
+				font-size: calc(20vh);
+				margin: 0;
+			}
+			header > h1 > a {
+				color: red;
+			}
+			article,
+			aside {
+				opacity: 0;
+				max-height: 0;
+				transition: max-height 0.6s, opacity 0.3s;
+			}
+			.visible {
+				opacity: 1;
+				max-height: 1000px;
+			}
+			footer {
+				margin-top: 2em;
+			}
+		</style>
+		<script>
+			function toggleArticle() {
+				var article = document.getElementsByTagName("article")[0];
+				var aside = document.getElementsByTagName("aside")[0];
+				aside.classList.toggle("visible");
+				article.classList.toggle("visible");
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1><a href="#" onclick="toggleArticle()">7 : 0</a></h1>
+		</header>
+		<article>
+			<h2>Oslobodení bez súdu</h2>
+			<ul>
+				<li>Peter Brhel</li>
+				<li>Jaroslav Haščák</li>
+				<li>Zoroslav Kollár</li>
+				<li>Vladimír Pčolinský</li>
+				<li>Ľubomír Arpáš</li>
+				<li>Dana Arpášová</li>
+			</ul>
+			<h2>Skutok sa nestal</h2>
+			<ul>
+				<li>Únos Vietnamca</li>
+			</ul>
+		</article>
+		<aside class="visible">
+			<figure>
+				<blockquote cite="https://www.youtube.com/watch?v=08nv9_d1TeU">
+					<p>&#8222;Len blázon by si nechal úplatok poslať na vlastný účet.&#8220;</p>
+				</blockquote>
+				<figcaption>
+					Maroš Žilinka, <cite><a href="https://www.youtube.com/watch?v=08nv9_d1TeU">TK Generálnej prokuratúry</a></cite> (2. septembra 2021)
+				</figcaption>
+			</figure>
+		</aside>
+		<footer>
+			<a href="https://github.com/zilinka363/zilinka363.github.io"><img src="github.png" alt="github" /></a>
+		</footer>
+	</body>
+</html>
