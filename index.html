@@ -50,6 +50,9 @@
 				opacity: 1;
 				max-height: 1000px;
 			}
+			.hidden {
+				display: none;
+			}
 			footer {
 				margin-top: 2em;
 				z-index: 1;
@@ -62,14 +65,14 @@
 				var div = document.getElementsByTagName("div")[0];
 				aside.classList.toggle("visible");
 				article.classList.toggle("visible");
-				div.classList.toggle("visible");
+				div.classList.toggle("hidden");
 			}
 		</script>
 	</head>
 	<body>
 		<header>
 			<h1><a href="#" onclick="toggleArticle()">13 : 0</a></h1>
-			<div>(klik na skóre pre zoznam)</div>
+			<div onclick="toggleArticle()">(klik na skóre pre zoznam)</div>
 		</header>
 		<article>
 			<h2>Oslobodení bez súdu</h2>
