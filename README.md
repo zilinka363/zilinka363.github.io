@@ -1,3 +1,3 @@
 # Žilinka Skóre
 
-Feel free to contribute by creating a Pull Request.
+Ak chcete pridať, upraviť, opraviť, vytvorte Pull Request alebo Issue.
